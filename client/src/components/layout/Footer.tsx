@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-4">
             {/* TODO: Замените на вашу ссылку Telegram */}
             <a 
-              href="https://t.me/username" 
+              href="https://t.me/MaximYeliseyev" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors"

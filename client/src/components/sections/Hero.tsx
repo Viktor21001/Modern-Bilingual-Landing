@@ -43,7 +43,7 @@ export default function Hero() {
                 {t('hero.cta_trial')}
               </Button>
               {/* TODO: Замените на вашу ссылку Telegram */}
-              <Button variant="outline" size="lg" className="rounded-full w-full sm:w-auto text-base h-12 px-8 gap-2 group" onClick={() => window.open('https://t.me/username', '_blank')}>
+              <Button variant="outline" size="lg" className="rounded-full w-full sm:w-auto text-base h-12 px-8 gap-2 group" onClick={() => window.open('https://t.me/MaximYeliseyev', '_blank')}>
                 <Send className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 {t('hero.cta_contact')}
               </Button>

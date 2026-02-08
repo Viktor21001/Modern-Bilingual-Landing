@@ -3,18 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Star, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { Label } from '@/components/ui/label';
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 type ReviewItem = {
   name: string;
@@ -91,12 +79,6 @@ export default function Testimonials() {
     };
   }, [reviews.length]);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // В реальном проекте здесь была бы отправка на сервер
-    alert(t('reviews.alert_submitted'));
-  };
-
   return (
     <section id="reviews" className="py-20 md:py-32 bg-secondary/20">
       <div className="container mx-auto px-4 md:px-6">
@@ -140,44 +122,6 @@ export default function Testimonials() {
                 </Button>
               </div>
             ) : null}
-
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button variant="outline">{t('reviews.leave_review')}</Button>
-              </DialogTrigger>
-              <DialogContent className="sm:max-w-[425px]">
-                <DialogHeader>
-                  <DialogTitle>{t('reviews.leave_review')}</DialogTitle>
-                  <DialogDescription>
-                    {t('reviews.dialog_desc')}
-                  </DialogDescription>
-                </DialogHeader>
-                <form onSubmit={handleSubmit} className="grid gap-4 py-4">
-                  <div className="grid gap-2">
-                    <Label htmlFor="name">{t('reviews.form.name')}</Label>
-                    <Input id="name" required />
-                  </div>
-                  <div className="grid gap-2">
-                    <Label>{t('reviews.form.type')}</Label>
-                    <RadioGroup defaultValue="adult">
-                      <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="adult" id="adult" />
-                        <Label htmlFor="adult">{t('reviews.form.type_adult')}</Label>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="parent" id="parent" />
-                        <Label htmlFor="parent">{t('reviews.form.type_parent')}</Label>
-                      </div>
-                    </RadioGroup>
-                  </div>
-                  <div className="grid gap-2">
-                    <Label htmlFor="review">{t('reviews.form.review')}</Label>
-                    <Textarea id="review" required />
-                  </div>
-                  <Button type="submit">{t('reviews.form.submit')}</Button>
-                </form>
-              </DialogContent>
-            </Dialog>
           </div>
         </div>
 
