@@ -23,14 +23,14 @@ type ReviewItem = {
   rating: number;
 };
 
-// TODO: Reviews file path (edit data here)
+// TODO: Путь к файлу отзывов (редактируйте данные здесь)
 const REVIEWS_URL = "/data/reviews.json";
 
 export default function Testimonials() {
   const { t } = useTranslation();
   const [reviews, setReviews] = useState<ReviewItem[]>([
-    { name: "Elena K.", role: "Parent", text: t('reviews.placeholder_1'), rating: 5 },
-    { name: "Sergey M.", role: "Adult Student", text: t('reviews.placeholder_2'), rating: 5 },
+    { name: "Елена К.", role: "Родитель", text: t('reviews.placeholder_1'), rating: 5 },
+    { name: "Сергей М.", role: "Взрослый ученик", text: t('reviews.placeholder_2'), rating: 5 },
   ]);
   const sliderRef = useRef<HTMLDivElement | null>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -46,7 +46,7 @@ export default function Testimonials() {
         const data = (await res.json()) as ReviewItem[];
         if (!Array.isArray(data)) return;
 
-        // TODO: Review text is loaded from the JSON file above
+        // TODO: Текст отзывов берется из JSON-файла выше
         const cleaned = data
           .filter((item) => item && item.name && item.text && item.role)
           .map((item) => ({
@@ -60,7 +60,7 @@ export default function Testimonials() {
           setReviews(cleaned);
         }
       } catch {
-        // ignore fetch errors, keep fallback
+        // игнорируем ошибки загрузки, остаемся на запасных данных
       }
     };
 
@@ -93,8 +93,8 @@ export default function Testimonials() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, this would submit to backend
-    alert("Review submitted for moderation!");
+    // В реальном проекте здесь была бы отправка на сервер
+    alert(t('reviews.alert_submitted'));
   };
 
   return (
@@ -109,7 +109,9 @@ export default function Testimonials() {
               <Star className="fill-current h-5 w-5" />
               <Star className="fill-current h-5 w-5" />
               <Star className="fill-current h-5 w-5" />
-              <span className="text-muted-foreground ml-2 text-sm">(5.0 Average)</span>
+              <span className="text-muted-foreground ml-2 text-sm">
+                {t('reviews.average', { value: "5.0" })}
+              </span>
             </div>
           </div>
 
@@ -120,7 +122,7 @@ export default function Testimonials() {
                   type="button"
                   variant="outline"
                   size="icon"
-                  aria-label="Scroll reviews left"
+                  aria-label={t('reviews.scroll_left')}
                   onClick={() => sliderRef.current?.scrollBy({ left: -360, behavior: "smooth" })}
                   disabled={!canScrollLeft}
                 >
@@ -130,7 +132,7 @@ export default function Testimonials() {
                   type="button"
                   variant="outline"
                   size="icon"
-                  aria-label="Scroll reviews right"
+                  aria-label={t('reviews.scroll_right')}
                   onClick={() => sliderRef.current?.scrollBy({ left: 360, behavior: "smooth" })}
                   disabled={!canScrollRight}
                 >
@@ -147,7 +149,7 @@ export default function Testimonials() {
                 <DialogHeader>
                   <DialogTitle>{t('reviews.leave_review')}</DialogTitle>
                   <DialogDescription>
-                    Share your experience with others.
+                    {t('reviews.dialog_desc')}
                   </DialogDescription>
                 </DialogHeader>
                 <form onSubmit={handleSubmit} className="grid gap-4 py-4">

@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// TODO: Main text content for all sections is stored here (RU/EN).
+// TODO: Основные тексты для всех секций хранятся здесь (RU/EN).
 const resources = {
   en: {
     translation: {
@@ -18,7 +18,13 @@ const resources = {
         subtitle: "Join cozy offline mini-groups (up to 4 people) in my office. Need online or 1:1? We can arrange it individually.",
         experience: "Teaching since 2020",
         cta_trial: "Book a Free Trial Lesson",
-        cta_contact: "Contact via Telegram"
+        cta_contact: "Contact via Telegram",
+        image_alt: "English tutor lesson",
+        highlight_1: "TESOL Certified",
+        highlight_2: "Offline mini-groups (max 4)",
+        highlight_3: "Online & 1:1 by arrangement",
+        badge_title: "Mini-group focus",
+        badge_subtitle: "Up to 4 students"
       },
       about: {
         title: "About MYEnglish",
@@ -27,7 +33,10 @@ const resources = {
         desc2: "The main format is offline mini-group lessons (max 4 students) in my office. Online lessons and personal 1:1 sessions are also available — we discuss and choose what fits your goals.",
         stat1: "Teaching since",
         stat2: "Mini-group size",
-        stat3: "Lesson length"
+        stat3: "Lesson length",
+        stat1_value: "2020",
+        stat2_value: "4 max",
+        stat3_value: "60 min"
       },
       process: {
         title: "How Lessons Work",
@@ -42,6 +51,7 @@ const resources = {
       },
       services: {
         title: "Formats & Pricing",
+        subtitle: "Choose the format that fits you: offline mini-groups in my office (max 4), or online / personal 1:1 by arrangement.",
         price: "2000 RUB",
         per_lesson: "per lesson",
         duration: "60 minutes",
@@ -69,13 +79,22 @@ const resources = {
       certifications: {
         title: "Education & Certifications",
         diploma: "Degree in International Relations",
-        tesol: "TESOL Certification"
+        tesol: "TESOL Certification",
+        diploma_subtitle: "Linguistics Degree",
+        tesol_subtitle: "International Certification",
+        diploma_alt: "University diploma",
+        tesol_alt: "TESOL certificate"
       },
       reviews: {
         title: "Student Reviews",
         leave_review: "Leave a Review",
         placeholder_1: "Great tutor! My son loves the lessons.",
         placeholder_2: "I finally feel confident speaking English at work.",
+        average: "{{value}} average",
+        scroll_left: "Scroll reviews left",
+        scroll_right: "Scroll reviews right",
+        dialog_desc: "Share your experience with others.",
+        alert_submitted: "Review submitted for moderation!",
         form: {
           name: "Your Name (Optional)",
           type: "Student Type",
@@ -121,7 +140,13 @@ const resources = {
         subtitle: "Основной формат — офлайн мини‑группы до 4 человек в моём кабинете. Онлайн и 1:1 тоже возможны — обсудим индивидуально.",
         experience: "Опыт с 2020 года",
         cta_trial: "Записаться на бесплатный пробный урок",
-        cta_contact: "Написать в Telegram"
+        cta_contact: "Написать в Telegram",
+        image_alt: "Занятие с преподавателем английского",
+        highlight_1: "Сертификат TESOL",
+        highlight_2: "Офлайн мини‑группы (до 4)",
+        highlight_3: "Онлайн и 1:1 по договоренности",
+        badge_title: "Фокус мини‑группы",
+        badge_subtitle: "До 4 учеников"
       },
       about: {
         title: "О MYEnglish",
@@ -130,7 +155,10 @@ const resources = {
         desc2: "Основной формат — офлайн мини‑группы (до 4 человек) в моём кабинете. Онлайн‑занятия и персональные уроки 1:1 тоже доступны — формат выбираем вместе под ваши цели.",
         stat1: "Опыт",
         stat2: "Мини‑группа",
-        stat3: "Длительность"
+        stat3: "Длительность",
+        stat1_value: "2020",
+        stat2_value: "4 макс",
+        stat3_value: "60 мин"
       },
       process: {
         title: "Как проходят занятия",
@@ -145,6 +173,7 @@ const resources = {
       },
       services: {
         title: "Форматы и стоимость",
+        subtitle: "Выберите формат: офлайн мини‑группы в кабинете (до 4 человек) или онлайн / 1:1 по договоренности.",
         price: "2000 ₽",
         per_lesson: "за урок",
         duration: "60 минут",
@@ -172,13 +201,22 @@ const resources = {
       certifications: {
         title: "Образование и сертификаты",
         diploma: "Диплом Международные Отношения",
-        tesol: "Сертификат TESOL"
+        tesol: "Сертификат TESOL",
+        diploma_subtitle: "Лингвистическое образование",
+        tesol_subtitle: "Международная сертификация",
+        diploma_alt: "Диплом университета",
+        tesol_alt: "Сертификат TESOL"
       },
       reviews: {
         title: "Отзывы учеников",
         leave_review: "Оставить отзыв",
         placeholder_1: "Отличный репетитор! Сыну очень нравятся уроки.",
         placeholder_2: "Наконец-то чувствую уверенность, говоря на английском на работе.",
+        average: "Средняя оценка: {{value}}",
+        scroll_left: "Прокрутить отзывы влево",
+        scroll_right: "Прокрутить отзывы вправо",
+        dialog_desc: "Поделитесь своим опытом с другими.",
+        alert_submitted: "Отзыв отправлен на модерацию!",
         form: {
           name: "Ваше имя (необязательно)",
           type: "Кто вы",
@@ -214,7 +252,7 @@ const resources = {
 i18n
   .use(initReactI18next)
   .init({
-    // TODO: Default language is set here.
+    // TODO: Язык по умолчанию задается здесь.
     resources,
     lng: "ru", // default language
     fallbackLng: "ru",

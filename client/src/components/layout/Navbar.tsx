@@ -36,7 +36,7 @@ export default function Navbar() {
           MY<span className="text-foreground">English</span>
         </a>
 
-        {/* Desktop Nav */}
+        {/* Десктоп-меню */}
         <div className="hidden md:flex items-center gap-8">
           <div className="flex gap-6">
             {navLinks.map((link) => (
@@ -66,7 +66,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Menu Toggle */}
+        {/* Переключатель мобильного меню */}
         <div className="md:hidden flex items-center gap-4">
           <button 
             onClick={toggleLanguage}
@@ -82,7 +82,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Мобильное меню */}
       <AnimatePresence>
         {isOpen && (
           <motion.div 

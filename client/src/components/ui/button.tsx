@@ -11,24 +11,24 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-           // @replit: no hover, and add primary border
+        // @replit: без hover, добавлен основной бордер
            "bg-primary text-primary-foreground border border-primary-border",
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm border-destructive-border",
         outline:
-          // @replit Shows the background color of whatever card / sidebar / accent background it is inside of.
-          // Inherits the current text color. Uses shadow-xs. no shadow on active
-          // No hover state
+          // @replit: показывает фон контейнера (карта/сайдбар/акцент).
+          // Наследует цвет текста. Использует shadow-xs, без тени при active.
+          // Без hover-состояния
           " border [border-color:var(--button-outline)] shadow-xs active:shadow-none ",
         secondary:
-          // @replit border, no hover, no shadow, secondary border.
+        // @replit: бордер, без hover, без тени, вторичный бордер.
           "border bg-secondary text-secondary-foreground border border-secondary-border ",
-        // @replit no hover, transparent border
+        // @replit: без hover, прозрачный бордер
         ghost: "border border-transparent",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
-        // @replit changed sizes
+        // @replit: измененные размеры
         default: "min-h-9 px-4 py-2",
         sm: "min-h-8 rounded-md px-3 text-xs",
         lg: "min-h-10 rounded-md px-8",

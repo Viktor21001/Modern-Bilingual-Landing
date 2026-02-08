@@ -53,7 +53,7 @@ export default function Process() {
                 <p className="text-muted-foreground leading-relaxed">{step.desc}</p>
               </div>
               
-              {/* Connector Line (Desktop Only) */}
+              {/* Линия связи (только для десктопа) */}
               {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-[2px] bg-muted-foreground/20 -translate-y-1/2 z-0" />
               )}

@@ -20,7 +20,7 @@ export default function Services() {
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('services.title')}</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Choose the format that fits you: offline mini-groups in my office (max 4), or online / personal 1:1 by arrangement.
+              {t('services.subtitle')}
             </p>
             
             <div className="bg-secondary/30 p-8 rounded-2xl border border-secondary space-y-6">

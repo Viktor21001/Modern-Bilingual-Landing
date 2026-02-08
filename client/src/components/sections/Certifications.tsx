@@ -22,10 +22,10 @@ export default function Certifications() {
             className="flex flex-col items-center text-center group"
           >
             <div className="w-48 h-48 md:w-64 md:h-64 mb-8 relative rounded-full bg-secondary/30 flex items-center justify-center p-8 transition-transform duration-500 group-hover:scale-105">
-              <img src={diplomaIcon} alt="University Diploma" className="w-full h-full object-contain drop-shadow-md" />
+              <img src={diplomaIcon} alt={t('certifications.diploma_alt')} className="w-full h-full object-contain drop-shadow-md" />
             </div>
             <h3 className="text-xl font-bold font-heading">{t('certifications.diploma')}</h3>
-            <p className="text-muted-foreground mt-2">Linguistics Degree</p>
+            <p className="text-muted-foreground mt-2">{t('certifications.diploma_subtitle')}</p>
           </motion.div>
 
           <motion.div 
@@ -35,10 +35,10 @@ export default function Certifications() {
             className="flex flex-col items-center text-center group"
           >
             <div className="w-48 h-48 md:w-64 md:h-64 mb-8 relative rounded-full bg-secondary/30 flex items-center justify-center p-8 transition-transform duration-500 group-hover:scale-105">
-              <img src={tesolIcon} alt="TESOL Certificate" className="w-full h-full object-contain drop-shadow-md" />
+              <img src={tesolIcon} alt={t('certifications.tesol_alt')} className="w-full h-full object-contain drop-shadow-md" />
             </div>
             <h3 className="text-xl font-bold font-heading">{t('certifications.tesol')}</h3>
-            <p className="text-muted-foreground mt-2">International Certification</p>
+            <p className="text-muted-foreground mt-2">{t('certifications.tesol_subtitle')}</p>
           </motion.div>
 
         </div>
