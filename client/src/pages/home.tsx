@@ -21,7 +21,7 @@ export default function Home() {
         <Services />
         <TargetAudience />
         <Certifications />
-        <Testimonials />
+        {/* TODO: Отзывы временно скрыты */}
         <WhyMe />
         <Contact />
       </main>
