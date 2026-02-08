@@ -79,11 +79,16 @@ const resources = {
       certifications: {
         title: "Education & Certifications",
         diploma: "Education",
-        tesol: "TESOL Certification",
+        tesol: "International Certification",
+        mba: "Education",
         diploma_subtitle: "International Relations",
+        diploma_detail: "St. Petersburg State University 2006-2011",
         tesol_subtitle: "TESOL",
+        mba_subtitle: "Master of Business Administration",
+        mba_detail: "University of International Business and Economics 2011-2013",
         diploma_alt: "University diploma",
-        tesol_alt: "International Certification"
+        tesol_alt: "TESOL certificate",
+        mba_alt: "MBA diploma"
       },
       reviews: {
         title: "Student Reviews",
@@ -201,11 +206,16 @@ const resources = {
       certifications: {
         title: "Образование и сертификаты",
         diploma: "Высшее образование",
-        tesol: "Сертификат TESOL",
+        tesol: "Международная сертификация",
+        mba: "Master of Business Administration",
         diploma_subtitle: "Международные отношения",
-        tesol_subtitle: "Международная сертификация",
+        diploma_detail: "СПбГУ 2006-2011",
+        tesol_subtitle: "TESOL",
+        mba_subtitle: "Бизнес-администрирование",
+        mba_detail: "University of International Business and Economics 2011-2013",
         diploma_alt: "Диплом университета",
-        tesol_alt: "Сертификат TESOL"
+        tesol_alt: "Сертификат TESOL",
+        mba_alt: "Диплом MBA"
       },
       reviews: {
         title: "Отзывы учеников",
