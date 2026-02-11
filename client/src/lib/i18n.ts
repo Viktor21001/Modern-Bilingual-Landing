@@ -14,7 +14,7 @@ const resources = {
         book: "Book a Lesson"
       },
       hero: {
-        title: "MYEnglish — Mini-Group & Personal English Lessons",
+        title: "MY English Club — Mini-Group & Personal English Lessons",
         subtitle: "Join cozy offline mini-groups (up to 4 people) in my office. Need online or 1:1? We can arrange it individually.",
         experience: "Teaching since 2020",
         cta_trial: "Book a Free Trial Lesson",
@@ -27,7 +27,7 @@ const resources = {
         badge_subtitle: "Up to 4 students"
       },
       about: {
-        title: "About MYEnglish",
+        title: "About MY English Club",
         intro: "Hi! I’m a certified English teacher helping students speak confidently — in a calm, friendly environment.",
         desc1: "I’ve been teaching since 2020, I’m TESOL certified, and hold a degree in International Relations, with my education and professional experience conducted entirely in english. I've studied and lived abroad, worked in international companies, and use English as a real working tool - not just an academic subject.",
         desc2: "The main format is offline mini-group lessons (max 4 students) in my office. Online lessons and personal 1:1 sessions are also available — we can discuss and choose what fits your goals.",
@@ -111,7 +111,7 @@ const resources = {
         }
       },
       whyme: {
-        title: "Why Choose MYEnglish",
+        title: "Why Choose MY English Club",
         reasons: [
           { title: "Mini-groups (4 students max)", desc: "You get attention and speaking time — without the stress of a big class." },
           { title: "Offline office format", desc: "A focused space for learning, with all materials ready." },
@@ -141,7 +141,7 @@ const resources = {
         book: "Пробный урок"
       },
       hero: {
-        title: "MYEnglish — Мини‑группы и персональные уроки английского",
+        title: "MY English Club — Мини‑группы и персональные уроки английского",
         subtitle: "Основной формат — офлайн мини‑группы до 4 человек. Онлайн и 1:1 тоже возможны — обсудим индивидуально.",
         experience: "Опыт с 2020 года",
         cta_trial: "Записаться на бесплатный пробный урок",
@@ -154,7 +154,7 @@ const resources = {
         badge_subtitle: "До 4 учеников"
       },
       about: {
-        title: "О MYEnglish",
+        title: "О MY English Club",
         intro: "Привет! Я сертифицированный преподаватель английского и помогаю ученикам говорить уверенно — спокойно и по делу.",
         desc1: "Преподаю с 2020 года. Имею сертификат TESOL и высшее образование по направлению Международные отношения, а также диплом MBA. Обучение и профессиональная деятельность проходили на английском языке. Я жил и учился за рубежом, работал в международной компании и использую английский как рабочий инструмент, а не только как академический предмет",
         desc2: "Основной формат — офлайн мини‑группы (до 4 человек) в комфортабельном офисе. Онлайн‑занятия и персональные уроки 1:1 тоже доступны — формат выбираем вместе под ваши цели.",
@@ -238,7 +238,7 @@ const resources = {
         }
       },
       whyme: {
-        title: "Почему MYEnglish",
+        title: "Почему MY English Club",
         reasons: [
           { title: "Мини‑группы до 4 учеников", desc: "Достаточно внимания и времени на говорение — без \"толпы\"." },
           { title: "Офлайн в комфортабельном офисе", desc: "Спокойное пространство для занятий, все материалы под рукой." },
@@ -248,7 +248,7 @@ const resources = {
       },
       contact: {
         title: "Давайте выберем формат",
-        subtitle: "Напишите мне в Telegram, чтобы записаться на бесплатный пробный урок и обсудить: мини‑группа в кабинете, онлайн или 1:1.",
+        subtitle: "Напишите мне в Telegram, чтобы записаться на бесплатный пробный урок и обсудить: мини‑группа, онлайн или 1:1.",
         button: "Написать в Telegram"
       },
       footer: {
