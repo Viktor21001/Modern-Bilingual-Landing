@@ -11,20 +11,34 @@ export default function VisitorCounter({ className = '' }: VisitorCounterProps) 
   useEffect(() => {
     const namespace = 'my-english-online';
     const key = 'visitors';
-    const url = `https://api.countapi.xyz/hit/${encodeURIComponent(namespace)}/${encodeURIComponent(key)}`;
+    const url = `https://countapi.xyz/hit/${encodeURIComponent(namespace)}/${encodeURIComponent(key)}`;
+
+    const fallbackToLocal = () => {
+      try {
+        const localKey = 'my-english-online-local-count';
+        const sessionKey = 'my-english-online-session';
+        const stored = Number(localStorage.getItem(localKey) || 0);
+        const alreadyCounted = sessionStorage.getItem(sessionKey) === '1';
+        const next = alreadyCounted ? stored : stored + 1;
+        localStorage.setItem(localKey, String(next));
+        sessionStorage.setItem(sessionKey, '1');
+        setCount(next);
+      } catch {
+        setError(true);
+      }
+    };
 
     fetch(url)
-      .then((res) => res.json())
+      .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (data && typeof data.value === 'number') {
           setCount(data.value);
         } else {
-          setError(true);
+          fallbackToLocal();
         }
       })
-      .catch((err) => {
-        console.error('Visitor counter error:', err);
-        setError(true);
+      .catch(() => {
+        fallbackToLocal();
       });
   }, []);
 
