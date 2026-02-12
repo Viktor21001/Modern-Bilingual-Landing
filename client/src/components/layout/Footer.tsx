@@ -1,7 +1,6 @@
 // src/components/layout/Footer.tsx
 import { useTranslation } from 'react-i18next';
 import { Send, Globe } from 'lucide-react';
-import VisitorCounter from '@/components/ui/VisitorCounter';
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
@@ -39,9 +38,8 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* ПРАВАЯ ЧАСТЬ — СЧЁТЧИК + ПЕРЕКЛЮЧАТЕЛЬ ЯЗЫКА */}
+          {/* ПРАВАЯ ЧАСТЬ — ПЕРЕКЛЮЧАТЕЛЬ ЯЗЫКА */}
           <div className="flex items-center gap-6">
-            <VisitorCounter />               {/* ← красивый badge с числом */}
             <button 
               onClick={toggleLanguage}
               className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-white transition-colors"
