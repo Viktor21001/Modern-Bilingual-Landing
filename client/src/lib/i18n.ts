@@ -19,7 +19,7 @@ const resources = {
       hero: {
         title_suffix: "— Mini-Group & Personal English Lessons",
         subtitle: "Join cozy offline mini-groups (up to 4 people) in my office. Need online or 1:1? We can arrange it individually.",
-        experience: "Teaching since 2020",
+        experience: "Teaching since 2010",
         cta_trial: "Book a Free Trial Lesson",
         cta_contact: "Contact via Telegram",
         image_alt: "English tutor lesson",
@@ -32,12 +32,12 @@ const resources = {
       about: {
         title_prefix: "About",
         intro: "Hi! I’m a certified English teacher helping students speak confidently — in a calm, friendly environment.",
-        desc1: "I’ve been teaching since 2020, I’m TESOL certified, and hold a degree in International Relations, with my education and professional experience conducted entirely in english. I've studied and lived abroad, worked in international companies, and use English as a real working tool - not just an academic subject.",
+        desc1: "I’ve been teaching since 2010, I’m TESOL certified, and hold a degree in International Relations, with my education and professional experience conducted entirely in english. I've studied and lived abroad, worked in international companies, and use English as a real working tool - not just an academic subject.",
         desc2: "The main format is offline mini-group lessons (max 4 students) in my office. Online lessons and personal 1:1 sessions are also available — we can discuss and choose what fits your goals.",
         stat1: "Teaching since",
         stat2: "Mini-group size",
         stat3: "Lesson length",
-        stat1_value: "2020",
+        stat1_value: "2010",
         stat2_value: "4 max",
         stat3_value: "60 min"
       },
@@ -119,7 +119,7 @@ const resources = {
           { title: "Mini-groups (4 students max)", desc: "You get attention and speaking time — without the stress of a big class." },
           { title: "Offline office format", desc: "A focused space for learning, with all materials ready." },
           { title: "Flexible options", desc: "Online lessons and personal 1:1 sessions are available by arrangement." },
-          { title: "Experience since 2020", desc: "Certified TESOL teacher with a degree in International Relations and experience in using the language." }
+          { title: "Experience since 2010", desc: "Certified TESOL teacher with a degree in International Relations and experience in using the language." }
         ]
       },
       contact: {
@@ -158,7 +158,7 @@ const resources = {
       hero: {
         title_suffix: "— Мини‑группы и персональные уроки английского",
         subtitle: "Основной формат — офлайн мини‑группы до 4 человек. Онлайн и 1:1 тоже возможны — обсудим индивидуально.",
-        experience: "Опыт с 2020 года",
+        experience: "Опыт с 2010 года",
         cta_trial: "Записаться на бесплатный пробный урок",
         cta_contact: "Написать в Telegram",
         image_alt: "Занятие с преподавателем английского",
@@ -171,12 +171,12 @@ const resources = {
       about: {
         title_prefix: "О",
         intro: "Привет! Я сертифицированный преподаватель английского и помогаю ученикам говорить уверенно — спокойно и по делу.",
-        desc1: "Преподаю с 2020 года. Имею сертификат TESOL и высшее образование по направлению Международные отношения, а также диплом MBA. Обучение и профессиональная деятельность проходили на английском языке. Я жил и учился за рубежом, работал в международной компании и использую английский как рабочий инструмент, а не только как академический предмет",
+        desc1: "Преподаю с 2010 года. Имею сертификат TESOL и высшее образование по направлению Международные отношения, а также диплом MBA. Обучение и профессиональная деятельность проходили на английском языке. Я жил и учился за рубежом, работал в международной компании и использую английский как рабочий инструмент, а не только как академический предмет",
         desc2: "Основной формат — офлайн мини‑группы (до 4 человек) в комфортабельном офисе. Онлайн‑занятия и персональные уроки 1:1 тоже доступны — формат выбираем вместе под ваши цели.",
         stat1: "Опыт",
         stat2: "Мини‑группа",
         stat3: "Длительность",
-        stat1_value: "2020",
+        stat1_value: "2010",
         stat2_value: "4 макс",
         stat3_value: "60 мин"
       },
@@ -258,7 +258,7 @@ const resources = {
           { title: "Мини‑группы до 4 учеников", desc: "Достаточно внимания и времени на говорение — без \"толпы\"." },
           { title: "Офлайн в комфортабельном офисе", desc: "Спокойное пространство для занятий, все материалы под рукой." },
           { title: "Гибкие варианты", desc: "Онлайн и персональные уроки 1:1 доступны по договорённости." },
-          { title: "Опыт с 2020", desc: "Сертификат TESOL, диплом по направлению Международные отношения и MBA зарубежного ВУЗа." }
+          { title: "Опыт с 2010", desc: "Сертификат TESOL, диплом по направлению Международные отношения и MBA зарубежного ВУЗа." }
         ]
       },
       contact: {
