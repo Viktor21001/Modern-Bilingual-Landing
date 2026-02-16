@@ -42,7 +42,7 @@ export default function Navbar() {
     { name: t('nav.about'), href: '#about' },
     { name: t('nav.process'), href: '#process' },
     { name: t('nav.pricing'), href: '#pricing' },
-    { name: t('nav.reviews'), href: '#reviews' },
+    // { name: t('nav.reviews'), href: '#reviews' },
     { name: t('nav.contact'), href: '#contact' },
   ];
 
