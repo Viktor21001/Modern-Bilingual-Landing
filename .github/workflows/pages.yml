@@ -33,6 +33,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Copy verification files
+        run: |
+          cp google160c624a30a8e77e.html dist/
+          cp yandex_3b062bfe6c173430.html dist/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
