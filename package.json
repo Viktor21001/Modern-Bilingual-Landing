@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
+    "sitemap": "node generate-sitemap.js",
     "build": "npm run sitemap && vite build",
     "preview": "vite preview",
     "check": "tsc --noEmit"
