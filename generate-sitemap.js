@@ -1,15 +1,19 @@
 import { SitemapStream, streamToPromise } from 'sitemap'
 import { writeFileSync } from 'fs'
+import path from 'path'
 
 const sitemap = new SitemapStream({ hostname: 'https://my-english.online' })
 
-// Перечислите все страницы вашего сайта
+// Только главная страница (без якорей)
 sitemap.write({ url: '/', changefreq: 'daily', priority: 1.0 })
-// Дополнительные якоря на существующие секции
 
 sitemap.end()
 
 streamToPromise(sitemap).then(data => {
-  // Путь к папке public (куда Vite копирует статику): client/public
-  writeFileSync('./sitemap.xml', data.toString())
+  const outPath = path.join(process.cwd(), 'client', 'public', 'sitemap.xml')
+  writeFileSync(outPath, data.toString())
+  console.log(`✅ sitemap.xml сохранён в ${outPath}`)
+}).catch(err => {
+  console.error('❌ Ошибка генерации sitemap:', err)
+  process.exit(1)
 })

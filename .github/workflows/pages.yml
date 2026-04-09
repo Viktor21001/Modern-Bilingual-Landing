@@ -33,11 +33,14 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Copy verification files
+      - name: Copy verification files and sitemap (fallback)
         run: |
-          cp google160c624a30a8e77e.html dist/
-          cp yandex_3b062bfe6c173430.html dist/
-          cp sitemap.xml dist/
+          # Копируем файлы верификации (если они в корне)
+          cp google160c624a30a8e77e.html dist/ 2>/dev/null || true
+          cp yandex_3b062bfe6c173430.html dist/ 2>/dev/null || true
+          # Если sitemap.xml вдруг не попал из client/public, скопируем из корня (но обычно он уже в dist)
+          cp sitemap.xml dist/ 2>/dev/null || true
+          cp robots.txt dist/ 2>/dev/null || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
