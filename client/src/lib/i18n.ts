@@ -30,7 +30,7 @@ const resources = {
       about: {
         title_prefix: "About",
         intro: "Hi! I’m a certified English teacher helping students speak confidently — in a calm, friendly environment.",
-        desc1: "I’ve been teaching since 2010, I’m TESOL certified, and hold a degree in International Relations, with my education and professional experience conducted entirely in english. I've studied and lived abroad, worked in international companies, and use English as a real working tool - not just an academic subject.",
+        desc1: "I’ve been teaching since 2010, I’m TESOL certified, and hold a degree in International Relations as well as an MBA, with my education and professional experience conducted entirely in english. I've studied and lived abroad, worked in international companies, and use English as a real working tool - not just an academic subject.",
         desc2: "Main format — online 1:1 lessons.",
         stat1: "Teaching since",
         stat2: "Online format",
@@ -41,28 +41,28 @@ const resources = {
       },
       process: {
         title: "How Lessons Work",
-        step1_title: "Online 1:1",
+        step1_title: "Online format",
         step1_desc: "Lessons take place online, one-on-one with the teacher.",
         step2_title: "Interactive Practice",
         step2_desc: "Modern materials, real-life topics, and plenty of speaking time.",
         step3_title: "Clear Structure",
         step3_desc: "Step-by-step progress: vocabulary, grammar, and fluency — without overload.",
         step4_title: "Support Between Lessons",
-        step4_desc: "Homework, feedback, and progress tracking so you stay consistent."
+        step4_desc: "Feedback and progress tracking."
       },
       services: {
         title: "Format & Pricing",
         subtitle: "Personal online English lessons, 1:1.",
-        price: "8000 RUB",
+        price: "10 000 RUB",
         per_lesson: "per month",
         duration: "(2 classes a week)",
-        format_primary_title: "Online 1:1",
+        format_primary_title: "Online",
         format_primary_desc: "Individual lessons: pace and program tailored to your goals.",
         includes: [
-          "1:1 speaking practice",
+          "Speaking practice",
           "Clear structure and goals",
           "Modern interactive materials",
-          "Homework + feedback",
+          "Feedback",
           "Progress tracking"
         ],
         trial_title: "Free Trial Lesson",
@@ -114,11 +114,11 @@ const resources = {
         reasons: [
           { title: "Online from anywhere", desc: "Study from home — all you need is a computer and the internet." },
           { title: "Personal 1:1", desc: "The teacher’s full attention is on you: pace and program fit your goals." },
-          { title: "Experience since 2010", desc: "Certified TESOL teacher with a degree in International Relations and experience in using the language." }
+          { title: "Experience since 2010", desc: "TESOL certificate, a degree in International Relations and an MBA from a foreign university." }
         ]
       },
       contact: {
-        title: "Let’s get started",
+        title: "Book a lesson",
         subtitle: "Message me on Telegram or WhatsApp to book your free trial lesson.",
         button: "Message on Telegram",
         whatsapp_button: "Message on WhatsApp",
