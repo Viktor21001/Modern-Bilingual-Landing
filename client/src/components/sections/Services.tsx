@@ -33,15 +33,9 @@ export default function Services() {
                   <p className="text-muted-foreground">{t('services.trial_desc')}</p>
                 </div>
               </div>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="bg-white/70 border rounded-2xl p-5">
-                  <div className="text-sm font-semibold text-primary mb-1 whitespace-pre-line">{t('services.format_primary_title')}</div>
-                  <div className="text-sm text-muted-foreground">{t('services.format_primary_desc')}</div>
-                </div>
-                <div className="bg-white/70 border rounded-2xl p-5">
-                  <div className="text-sm font-semibold text-primary mb-1">{t('services.format_other_title')}</div>
-                  <div className="text-sm text-muted-foreground">{t('services.format_other_desc')}</div>
-                </div>
+              <div className="bg-white/70 border rounded-2xl p-5">
+                <div className="text-sm font-semibold text-primary mb-1 whitespace-pre-line">{t('services.format_primary_title')}</div>
+                <div className="text-sm text-muted-foreground">{t('services.format_primary_desc')}</div>
               </div>
             </div>
           </motion.div>

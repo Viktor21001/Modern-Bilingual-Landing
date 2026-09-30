@@ -60,10 +60,6 @@ export default function Hero() {
                 <CheckCircle2 className="h-4 w-4 text-primary" />
                 <span>{t('hero.highlight_2')}</span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 text-primary" />
-                <span>{t('hero.highlight_3')}</span>
-              </div>
             </div>
           </motion.div>
 
@@ -92,7 +88,6 @@ export default function Hero() {
                 </div>
                 <div>
                   <p className="font-bold text-sm md:text-[11px]">{t('hero.badge_title')}</p>
-                  <p className="text-xs text-muted-foreground md:text-[10px]">{t('hero.badge_subtitle')}</p>
                 </div>
               </motion.div>
             </div>

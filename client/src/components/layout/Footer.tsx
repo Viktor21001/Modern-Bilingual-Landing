@@ -1,6 +1,8 @@
 // src/components/layout/Footer.tsx
 import { useTranslation } from 'react-i18next';
 import { Send, Globe } from 'lucide-react';
+import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
+import { WHATSAPP_URL } from '@/lib/contacts';
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
@@ -24,17 +26,27 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Центр — Telegram */}
-          <div className="flex flex-col items-center gap-4">
-            <a 
-              href="https://t.me/MaximYeliseyev" 
-              target="_blank" 
+          {/* Центр — Telegram и WhatsApp */}
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="https://t.me/MaximYeliseyev"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors"
               data-testid="button-footer-telegram"
             >
               <Send className="h-4 w-4" />
               Telegram
+            </a>
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-full hover:bg-[#1DA851] transition-colors"
+              data-testid="button-footer-whatsapp"
+            >
+              <WhatsAppIcon className="h-4 w-4" />
+              WhatsApp
             </a>
           </div>
 

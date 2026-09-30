@@ -2,13 +2,11 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import YandexMapDialog from '@/components/ui/YandexMapDialog';
+import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
+import { WHATSAPP_URL } from '@/lib/contacts';
 
 export default function Contact() {
   const { t } = useTranslation();
-
-  const mapUrl =
-    "https://yandex.ru/map-widget/v1/?ll=37.171855%2C55.588552&z=17&pt=37.171855,55.588552,pm2rdm";
 
   return (
     <section id="contact" className="py-24 md:py-32 bg-white">
@@ -40,12 +38,15 @@ export default function Contact() {
                 {t('contact.button')}
               </Button>
 
-              <YandexMapDialog
-                mapUrl={mapUrl}
-                telegramUrl="https://t.me/MaximYeliseyev"
-                telegramLabel="@MaximYeliseyev"
-                className="h-14 px-10 rounded-full text-lg w-full sm:w-[280px]"
-              />
+              <Button
+                size="lg"
+                className="h-14 px-10 rounded-full text-lg text-white bg-[#25D366] hover:bg-[#1DA851] border-[#25D366] hover:border-[#1DA851] shadow-xl shadow-[#25D366]/25 hover:shadow-[#25D366]/40 transition-all w-full sm:w-[280px]"
+                onClick={() => window.open(WHATSAPP_URL, '_blank')}
+                data-testid="button-contact-whatsapp"
+              >
+                <WhatsAppIcon className="mr-2 h-5 w-5" />
+                {t('contact.whatsapp_button')}
+              </Button>
             </div>
           </motion.div>
         </div>

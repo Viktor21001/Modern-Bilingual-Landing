@@ -1,12 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Globe, UserCheck, Layers, Mic } from 'lucide-react';
+import { Globe, UserCheck, Mic } from 'lucide-react';
 
 export default function WhyMe() {
   const { t } = useTranslation();
 
   const reasons = t('whyme.reasons', { returnObjects: true }) as { title: string, desc: string }[];
-  const icons = [Globe, UserCheck, Layers, Mic];
+  const icons = [Globe, UserCheck, Mic];
 
   return (
     <section className="py-20 bg-primary text-primary-foreground dark:bg-[hsl(var(--card))] dark:text-foreground">
@@ -19,7 +19,7 @@ export default function WhyMe() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {reasons.map((reason, index) => {
             const Icon = icons[index % icons.length];
             return (
