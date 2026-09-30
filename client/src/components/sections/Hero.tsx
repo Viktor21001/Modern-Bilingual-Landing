@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
-import { Send, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 const heroImage = "/assets/friendly_online_english_tutor_teaching_a_lesson.jpg";
 
@@ -43,11 +43,6 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
               <Button size="lg" className="rounded-full w-full sm:w-auto text-base h-12 px-8" onClick={() => window.location.href = '#contact'}>
                 {t('hero.cta_trial')}
-              </Button>
-              {/* TODO: Замените на вашу ссылку Telegram */}
-              <Button variant="outline" size="lg" className="rounded-full w-full sm:w-auto text-base h-12 px-8 gap-2 group" onClick={() => window.open('https://t.me/MaximYeliseyev', '_blank')}>
-                <Send className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                {t('hero.cta_contact')}
               </Button>
             </div>
 
